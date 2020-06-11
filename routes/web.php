@@ -16,3 +16,27 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/vestidos', function () {
+    return view('welcome');
+});
+
+Route::get('/asesoramiento', function () {
+    return view('welcome');
+});
+
+Route::get('/we-are-misia', function () {
+    return view('welcome');
+});
+
+Route::get('/contacto', function () {
+    return view('welcome');
+});
+
+Route::get('/mi-cuenta', function () {
+    return view('welcome');
+});
+
+Route::get('/carrito', function () {
+    return view('welcome');
+});
