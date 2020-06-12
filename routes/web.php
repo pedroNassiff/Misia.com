@@ -14,29 +14,29 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/vestidos', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/asesoramiento', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/we-are-misia', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/contacto', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/mi-cuenta', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/carrito', function () {
-    return view('welcome');
+    return view('home');
 });
