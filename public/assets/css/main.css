@@ -8,6 +8,23 @@
   font-family: 'Graphik BoldItalic';
   src: url(../fonts/Graphik-BoldItalic.otf);
 }
+@font-face{
+  font-family: 'Graphik SemiboldItalic';
+  src: url(../fonts/Graphik-SemiboldItalic.otf);
+}
+#placeholder {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1030;
+  background-color: #FFFFFF;
+}
+#placeholder .d-flex{
+  width: 100vw;
+  height: 100vh;
+}
 
 /* GLOBALS */
 @media (min-width: 1367px){
@@ -17,6 +34,9 @@
 }
 .g-bolditalic{
   font-family: 'Graphik BoldItalic', sans-serif;
+}
+.g-semibolditalic{
+  font-family: 'Graphik SemiboldItalic', sans-serif;
 }
 .h-condensed{
   font-family: 'Helvetica Condensed', sans-serif;
@@ -40,10 +60,16 @@ a:focus{
 }
 
 /* HOME */
+/* Sldier */
 .main-slider{
   margin-top: 95px;
 }
 @media (min-width: 1367px){
+  .main-slider{
+    margin-top: 90px;
+  }
+}
+@media (min-width: 1441px){
   .main-slider{
     margin-top: 120px;
   }
@@ -74,6 +100,12 @@ a:focus{
   bottom: 17%;
 }
 @media (min-width: 1367px){
+  .slick-slide .slide-text{
+    bottom: 20%;
+  }
+}
+}
+@media (min-width: 1441px){
   .slick-slide .slide-text{
     bottom: 22%;
   }
@@ -127,4 +159,10 @@ a:focus{
     margin-left: auto;
     margin-right: auto;
   }
+}
+/* Phrase */
+.phrase{
+ /* padding-top: 3rem;
+ padding-bottom: 2rem; */
+ overflow-x: hidden;
 }

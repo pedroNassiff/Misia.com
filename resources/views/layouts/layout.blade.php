@@ -26,6 +26,18 @@
           @endauth
       </div>
     @endif
+
+    <!-- Loader -->
+    <div id="placeholder" class="position-fixed">
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="spinner-border text-dark" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+    </div>
+    <!-- endLoader -->
+
+
     <!-- Header -->
     <nav class="header">
       <div class="container">
