@@ -63,4 +63,77 @@
 </section>
 <!-- endPhrase -->
 
+<!-- Showorom -->
+<section class="showroom py-5 my-5 bg-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <img class="img-fluid" src="{{ asset('assets/images/JPG/img-showroom.jpg') }}" alt="Misia SHOWROOM"/>
+      </div>
+      <div class="col-12 col-md-6 mt-auto">
+        <h2 class="h2 g-medium mb-3">
+          SHOWROOM
+        </h2>
+        <p class="h-condensed mb-3 pr-5">
+          Este es nuestro lugar de trabajo,
+          en el atelier recibimos a las clientas,
+          eligen los modelos de vestidos que
+          quieren medirse y brindamos una
+          atención personalizada acompañada de
+          un asesoramiento completo para
+          ayudarlas en la elección del mismo.
+          Estamos ubicados en el centro de
+          Rosario, Santa fe, Argentina.
+        </p>
+        <a class="btn h-condensed btn-generic" href="#">
+          PEDIR CITA
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- endShoworom -->
+
+<!-- Destacados -->
+<section class="destacados py-5 my-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="h3 g-medium mb-3 text-center">
+          Los más buscados
+        </h3>
+      </div>
+      <div class="col-md-3">
+        <img class="img-fluid" src="{{ asset('assets/images/JPG/product-1.jpg') }}" alt="Prodcutos destacados" style="width: 100%"/>
+        <ul class="d-flex justify-content-between mt-3">
+          <li><p class="g-medium name">Guernica</p></li>
+          <li><p class="h-condensed price">$11.900</p></li>
+      </ul>
+      </div>
+      <div class="col-md-3">
+        <img class="img-fluid" src="{{ asset('assets/images/JPG/product-1.jpg') }}" alt="Prodcutos destacados" style="width: 100%"/>
+        <ul class="d-flex justify-content-between mt-3">
+          <li><p class="g-medium name">Málaga</p></li>
+          <li><p class="h-condensed price">$11.900</p></li>
+      </ul>
+      </div>
+      <div class="col-md-3">
+        <img class="img-fluid" src="{{ asset('assets/images/JPG/product-1.jpg') }}" alt="Prodcutos destacados" style="width: 100%"/>
+        <ul class="d-flex justify-content-between mt-3">
+          <li><p class="g-medium name">Vera</p></li>
+          <li><p class="h-condensed price">$11.900</p></li>
+      </ul>
+      </div>
+      <div class="col-md-3">
+        <img class="img-fluid" src="{{ asset('assets/images/JPG/product-1.jpg') }}" alt="Prodcutos destacados" style="width: 100%"/>
+        <ul class="d-flex justify-content-between mt-3">
+          <li><p class="g-medium name">Crux</p></li>
+          <li><p class="h-condensed price">$11.900</p></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- endDestacados -->
+
 @endsection

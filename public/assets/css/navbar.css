@@ -142,6 +142,7 @@ table {
   width: 100%;
   z-index: 1010;
   height: auto;
+  border-bottom: 1px solid #f0f0f0;
 }
 .header .row {
   height: 90px;

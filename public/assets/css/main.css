@@ -12,6 +12,10 @@
   font-family: 'Graphik SemiboldItalic';
   src: url(../fonts/Graphik-SemiboldItalic.otf);
 }
+@font-face{
+  font-family: 'Graphik Medium';
+  src: url(../fonts/Graphik-Medium.otf);
+}
 #placeholder {
   position: fixed;
   width: 100vw;
@@ -38,8 +42,15 @@
 .g-semibolditalic{
   font-family: 'Graphik SemiboldItalic', sans-serif;
 }
+.g-medium{
+  font-family: 'Graphik Medium', sans-serif;
+}
 .h-condensed{
   font-family: 'Helvetica Condensed', sans-serif;
+}
+
+.bg-gray{
+  background-color: #f0f0f0;
 }
 
 .btn-generic{
@@ -49,6 +60,12 @@
   padding: 7px 20px;
   letter-spacing: 3px;
   border-radius: 0;
+  border: 2px solid transparent;
+}
+.btn-generic:hover{
+  background: #FFF;
+  color: #000 !important;
+  border: 2px solid #000;
 }
 a:focus{
   outline: 0;
@@ -103,7 +120,6 @@ a:focus{
   .slick-slide .slide-text{
     bottom: 20%;
   }
-}
 }
 @media (min-width: 1441px){
   .slick-slide .slide-text{
@@ -165,4 +181,28 @@ a:focus{
  /* padding-top: 3rem;
  padding-bottom: 2rem; */
  overflow-x: hidden;
+}
+/* Showroom */
+.showroom .h2{
+  letter-spacing: 5px;
+}
+.showroom p{
+  font-size: 1.75rem;
+  line-height: 1.5;
+}
+/* Destacados */
+.destacados h3{
+  letter-spacing: 5px;
+}
+.destacados img{
+  cursor: pointer;
+}
+.destacados img:hover{
+  box-shadow: 0 5px 17px rgba(0,0,0,.35);
+}
+.destacados .price{
+  font-size: 18px;
+}
+.destacados .name{
+  font-size: 22px;
 }
