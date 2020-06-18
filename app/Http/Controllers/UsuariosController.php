@@ -10,4 +10,14 @@ use Illuminate\Routing\UsuariosController as BaseController;
 class UsuariosController extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    public function registro(){
+        require_once '';
+    }
+
+    public function save(){
+        require_once '';
+    }
+
 }
+
