@@ -3,10 +3,10 @@
 namespace App;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Foundation\Auth\Usuarios as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class User extends Authenticatable
+class Usuarios extends Authenticatable
 {
     use Notifiable;
 
@@ -36,4 +36,57 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    function getId() {
+        return $this->id;
+    }
+
+    function getNombre() {
+        return $this->nombre;
+    }
+    function getApellidos() {
+        return $this->Apellidos;
+    }
+    function getEmail() {
+        return $this->email;
+    }
+    function getPassword() {
+        return $this->password;
+    }
+    function getRolId() {
+        return $this->rol_id;
+    }
+    function getImagen() {
+        return $this->imagen;
+    }
+
+    function setId($id) {
+        $this->id = $id;
+    }
+
+    function setNombre($nombre) {
+        $this->nombre = $nombre;
+    }
+
+    function setApellidos($apellidos) {
+        $this->apellidos = $apellidos;
+    }
+
+    function setEmail($email) {
+        $this->email = $email;
+    }
+
+    function setPassword($password) {
+        $this->password = $password;
+    }
+
+    function setRolId($rol_id) {
+        $this->rol_id = $rol_idea;
+    }
+
+    function setImagen($imagen) {
+        $this->imagen = $imagen;
+    }
+    
 }
+
