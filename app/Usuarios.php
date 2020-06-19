@@ -87,6 +87,10 @@ class Usuarios extends Authenticatable
     function setImagen($imagen) {
         $this->imagen = $imagen;
     }
+
+    public function save(){
+        
+    }
     
 }
 
