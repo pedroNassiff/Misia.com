@@ -39,7 +39,7 @@
 
 
     <!-- Header -->
-    <nav class="header">
+    <nav class="header nav-desktop">
       <div class="container">
         <div class="row">
           <div class="col-6 col-lg-5 my-auto">
@@ -107,9 +107,138 @@
         </div>
       </div>
     </nav>
+    <nav class="header nav-mobile">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-lg-2 my-auto">
+            <a href="">
+              <img src="{{ asset('assets/images/logo-misia.svg') }}" alt="MISIA logo" class="img-fluid header__logo ml-auto ml-lg-0" />
+            </a>
+          </div>
+          <div class="col-6 col-lg-5 my-auto">
+            <div class="botton-menu align-self-center" >
+              <div class="navbar navbar box-shadow">
+                <div class="nav-button">
+                  <span id="nav-icon3">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <ul class="header-item-group d-lg-flex justify-lg-content-between">
+              <li class="header-item-group__item">
+                <a href="#" class="item-link">
+                  VESTIDOS A MEDIDA
+                </a>
+              </li>
+              <li class="header-item-group__item">
+                <a href="#" class="item-link" >
+                  ASESORAMIENTO
+                </a>
+              </li>
+              <li class="header-item-group__item">
+                <a href="" class="item-link" >
+                  CLIENTES
+                </a>
+              </li>
+              <li class="header-item-group__item">
+                <a href="" class="item-link" >
+                  SOMOS MISIA
+                </a>
+              </li>
+              <li class="header-item-group__item">
+                <a href="#" class="item-link" >
+                  CONTACTO
+                </a>
+              </li>
+              <li class="header-item-group__item">
+                <a class="item-link" >
+                  MI CUENTA
+                </a>
+              </li>
+              <li class="header-item-group__item rrss yt">
+                <a href="#">
+                  <span>
+                    <img src="{{ asset('assets/images/icon-cart.svg') }}" alt="Icono carrito" class="img-fluid" />
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
     <!-- endHeader -->
 
     @yield('content')
+
+
+    <!-- Footer -->
+    <footer class="bg-gray pt-5 pb-5">
+      <div class="container">
+        <div class="row pt-3">
+          <div class="col-md-2 mb-5">
+            <img src="{{ asset('assets/images/logo-misia.svg') }}" alt="MISIA logo" class="img-fluid footer--logo ml-auto ml-lg-0" />
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-2">
+            <ul class="g-medium footer-link">
+              <li>
+                <p>Sobre Misia</p>
+              </li>
+              <li>
+                <p>Envíos</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <ul class="g-medium footer-link">
+              <li>
+                <p>FAQs</p>
+              </li>
+              <li>
+                <p>Contacto</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <ul class="g-medium footer-link">
+              <li>
+                <p>Instagram</p>
+              </li>
+              <li>
+                <p>Facebook</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <ul class="h-condensed copyright">
+              <li>
+                <p>Copyright 2020@Misia</p>
+              </li>
+              <li>
+                <p>Todos los derechos reservados</p>
+              </li>
+              <li>
+                <p>Cookies </p>
+              </li>
+              <li>
+                <p>Política de privacidad </p>
+              </li>
+              <li>
+                <p>Aviso legal</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- endFooter -->
 
     <!-- Libraries -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

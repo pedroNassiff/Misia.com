@@ -30,6 +30,39 @@
   height: 100vh;
 }
 
+.footer-link li{
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.footer--logo{
+  max-width: 250px;
+}
+.copyright{
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.copyright li{
+  padding-left: 5px;
+  padding-right: 5px;
+  border-right: 1px solid #000000;
+}
+.copyright li:last-child{
+  border-right: 1px solid transparent;
+}
+@media (max-width: 768px){
+  .copyright{
+    padding-top: 2rem;
+    display: block;
+  }
+  .copyright li{
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 1rem;
+    border: 0;
+  }
+}
+
 /* GLOBALS */
 @media (min-width: 1367px){
   .container{
@@ -75,7 +108,6 @@ a:focus{
   outline: 0;
   box-shadow: none;
 }
-
 /* HOME */
 /* Sldier */
 .main-slider{
@@ -104,6 +136,18 @@ a:focus{
 }
 .slick-slider .slider-arrow.arrow--right{
   right: 20px;
+}
+@media (max-width: 768px){
+  .slick-slider .slider-arrow{
+    width: 20px;
+    top: calc(50% - 10px);
+  }
+  .slick-slider .slider-arrow.arrow--left{
+    left: 10px;
+  }
+  .slick-slider .slider-arrow.arrow--right{
+    right: 10px;
+  }
 }
 .slick-slide{
   position: relative;
@@ -136,6 +180,17 @@ a:focus{
   .slick-slide .slide-text h1{
     font-size: 2rem;
     letter-spacing: 10px;
+  }
+}
+@media (max-width: 768px){
+  .slick-slide .slide-text h1{
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+  .slick-slide .slide-text .btn-generic{
+    padding: 5px 17px;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
   }
 }
 .slick-dotted.slick-slider{
@@ -182,6 +237,19 @@ a:focus{
  padding-bottom: 2rem; */
  overflow-x: hidden;
 }
+@media (max-width: 768px){
+  .phrase .h3{
+    font-size: 1rem;
+    letter-spacing: 1px;
+   }
+   .phrase--gallery{
+     margin-left: 0;
+     margin-right: 0;
+   }
+   .phrase--gallery .col-12{
+    margin-bottom: 1rem;
+  }
+}
 /* Showroom */
 .showroom .h2{
   letter-spacing: 5px;
@@ -189,6 +257,16 @@ a:focus{
 .showroom p{
   font-size: 1.75rem;
   line-height: 1.5;
+}
+@media (max-width: 768px){
+  .showroom .h2{
+    margin-top: 2rem;
+    letter-spacing: 5px;
+  }
+  .showroom p{
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
 }
 /* Destacados */
 .destacados h3{
@@ -205,4 +283,19 @@ a:focus{
 }
 .destacados .name{
   font-size: 22px;
+}
+.overflow{
+  overflow: auto;
+  max-width: 100%;
+}
+.overflow .row{
+  width: 1280px;
+}
+.overflow .row .item{
+  max-width: 320px;
+}
+@media (max-width: 768px){
+  .destacados h3{
+    letter-spacing: 2px;
+  }
 }
