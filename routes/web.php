@@ -40,3 +40,7 @@ Route::get('/mi-cuenta', function () {
 Route::get('/carrito', function () {
     return view('home');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
