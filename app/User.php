@@ -3,10 +3,10 @@
 namespace App;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\Usuarios as Authenticatable;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class Usuarios extends Authenticatable
+class User extends Authenticatable
 {
     use Notifiable;
 
@@ -16,7 +16,7 @@ class Usuarios extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'id', 'nombre', 'apellidos', 'email', 'password', 'rol_id', 'imagen',
+        'id', 'name', 'lastname', 'email', 'password', 'rol_id', 'image',
     ];
 
     /**
@@ -41,11 +41,11 @@ class Usuarios extends Authenticatable
         return $this->id;
     }
 
-    function getNombre() {
-        return $this->nombre;
+    function getName() {
+        return $this->name;
     }
-    function getApellidos() {
-        return $this->Apellidos;
+    function getLasname() {
+        return $this->lastname;
     }
     function getEmail() {
         return $this->email;
@@ -56,20 +56,20 @@ class Usuarios extends Authenticatable
     function getRolId() {
         return $this->rol_id;
     }
-    function getImagen() {
-        return $this->imagen;
+    function getImage() {
+        return $this->image;
     }
 
     function setId($id) {
         $this->id = $id;
     }
 
-    function setNombre($nombre) {
-        $this->nombre = $nombre;
+    function setName($name) {
+        $this->name = $name;
     }
 
-    function setApellidos($apellidos) {
-        $this->apellidos = $apellidos;
+    function setLastname($lastname) {
+        $this->lastname = $lastname;
     }
 
     function setEmail($email) {
@@ -84,8 +84,8 @@ class Usuarios extends Authenticatable
         $this->rol_id = $rol_idea;
     }
 
-    function setImagen($imagen) {
-        $this->imagen = $imagen;
+    function setImage($image) {
+        $this->image = $image;
     }
 
     public function save(){
