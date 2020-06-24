@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLineasPedidosTable extends Migration
+class CreateLineaPedidoTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateLineasPedidosTable extends Migration
      */
     public function up()
     {
-        Schema::create('lineas_pedidos', function (Blueprint $table) {
+        Schema::create('linea_pedido', function (Blueprint $table) {
             $table->id();
             $table->integer('pedido_id');
-            $table->foreign('pedido_id')->references('id')->on('pedidos')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('pedido_id')->references('id')->on('pedido')->onDelete('cascade')->onUpdate('cascade');
             $table->integer('producto_id');
-            $table->foreign('producto_id')->references('id')->on('productos')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('producto_id')->references('id')->on('producto')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreateLineasPedidosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('lineas_pedidos');
+        Schema::dropIfExists('linea_pedido');
     }
 }

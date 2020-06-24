@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\RolesControllers;
+namespace App\Http\RoleControllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
-use Illuminate\Routing\RolesController as BaseController;
+use Illuminate\Routing\RoleController as BaseController;
 
-class RolesController extends BaseController
+class RoleController extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
