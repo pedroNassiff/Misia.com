@@ -37,60 +37,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    function getId() {
-        return $this->id;
-    }
-
-    function getName() {
-        return $this->name;
-    }
-    function getLasname() {
-        return $this->lastname;
-    }
-    function getEmail() {
-        return $this->email;
-    }
-    function getPassword() {
-        return $this->password;
-    }
-    function getRolId() {
-        return $this->rol_id;
-    }
-    function getImage() {
-        return $this->image;
-    }
-
-    function setId($id) {
-        $this->id = $id;
-    }
-
-    function setName($name) {
-        $this->name = $name;
-    }
-
-    function setLastname($lastname) {
-        $this->lastname = $lastname;
-    }
-
-    function setEmail($email) {
-        $this->email = $email;
-    }
-
-    function setPassword($password) {
-        $this->password = $password;
-    }
-
-    function setRolId($rol_id) {
-        $this->rol_id = $rol_idea;
-    }
-
-    function setImage($image) {
-        $this->image = $image;
-    }
-
-    public function save(){
-        
-    }
+    
     
 }
 
