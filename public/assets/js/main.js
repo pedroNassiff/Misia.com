@@ -25,6 +25,12 @@ const placeholder = () => {
 $(function() {
   // Loader 
   placeholder();
+
+  // Menú
+  $('#botton-menu').on('click', function(){
+    document.querySelector('.navbar').classList.toggle('nav-open');
+    document.querySelector('#header-item-group').classList.toggle('active');
+  })
   
   // Slider
   $('.main-slider').slick({

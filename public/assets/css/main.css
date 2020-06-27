@@ -108,6 +108,10 @@ a:focus{
   outline: 0;
   box-shadow: none;
 }
+.first-section{
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
 /* HOME */
 /* Sldier */
 .main-slider{
@@ -284,18 +288,36 @@ a:focus{
 .destacados .name{
   font-size: 22px;
 }
-.overflow{
-  overflow: auto;
-  max-width: 100%;
-}
-.overflow .row{
-  width: 1280px;
-}
-.overflow .row .item{
-  max-width: 320px;
-}
 @media (max-width: 768px){
+  .overflow{
+    overflow: auto;
+    max-width: 100%;
+  }
+  .overflow .row{
+    width: 1280px;
+  }
+  .overflow .row .item{
+    max-width: 320px;
+  }
   .destacados h3{
     letter-spacing: 2px;
   }
+}
+
+/* REGISTER */
+.section-register{
+  
+}
+.card{
+  border-radius: 0;
+}
+.form-control{
+  border-radius: 0;
+}
+.form-control:focus{
+  color: initial;
+  background-color: initial;
+  border-color: initial;
+  outline: 0;
+  box-shadow: none;
 }

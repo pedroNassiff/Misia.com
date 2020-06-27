@@ -67,18 +67,6 @@
             </a>
           </div>
           <div class="col-6 col-lg-5 my-auto">
-            <div class="botton-menu align-self-center" >
-              <div class="navbar navbar box-shadow">
-                <div class="nav-button">
-                  <span id="nav-icon3">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </span>
-                </div>
-              </div>
-            </div>
             <ul class="header-item-group d-lg-flex justify-lg-content-between">
               <li class="header-item-group__item">
                 <a href="" class="item-link" >
@@ -94,9 +82,24 @@
                 <a class="item-link" >
                   MI CUENTA
                 </a>
+                <ul class='item-group sub-group'>
+                  <li class='item sub-item'>
+                    <a href="/login" class='item-link'>
+                      INGRESAR
+                    </a>
+                  </li>
+                  <li class='item sub-item'>
+                    <a
+                      href="/register"
+                      class='item-link'
+                    >
+                      CREAR CUENTA
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="header-item-group__item rrss yt">
-                <a href="#">
+                <a href="/">
                   <span>
                     <img src="{{ asset('assets/images/icon-cart.svg') }}" alt="Icono carrito" class="img-fluid" />
                   </span>
@@ -111,12 +114,12 @@
       <div class="container">
         <div class="row">
           <div class="col-6 col-lg-2 my-auto">
-            <a href="">
+            <a href="/">
               <img src="{{ asset('assets/images/logo-misia.svg') }}" alt="MISIA logo" class="img-fluid header__logo ml-auto ml-lg-0" />
             </a>
           </div>
           <div class="col-6 col-lg-5 my-auto">
-            <div class="botton-menu align-self-center" >
+            <div class="botton-menu align-self-center" id="botton-menu" >
               <div class="navbar navbar box-shadow">
                 <div class="nav-button">
                   <span id="nav-icon3">
@@ -128,7 +131,7 @@
                 </div>
               </div>
             </div>
-            <ul class="header-item-group d-lg-flex justify-lg-content-between">
+            <ul class="header-item-group d-lg-flex justify-lg-content-between" id="header-item-group">
               <li class="header-item-group__item">
                 <a href="#" class="item-link">
                   VESTIDOS A MEDIDA
@@ -158,9 +161,24 @@
                 <a class="item-link" >
                   MI CUENTA
                 </a>
+                <ul class='item-group sub-group'>
+                  <li class='item sub-item'>
+                    <a href="/login" class='item-link'>
+                      INGRESAR
+                    </a>
+                  </li>
+                  <li class='item sub-item'>
+                    <a
+                      href="/register"
+                      class='item-link'
+                    >
+                      CREAR CUENTA
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="header-item-group__item rrss yt">
-                <a href="#">
+                <a href="/">
                   <span>
                     <img src="{{ asset('assets/images/icon-cart.svg') }}" alt="Icono carrito" class="img-fluid" />
                   </span>
