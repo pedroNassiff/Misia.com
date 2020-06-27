@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\LineasPedidosControllers;
+namespace App\Http\LineaPedidosControllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
-use Illuminate\Routing\LineasPedidosController as BaseController;
+use Illuminate\Routing\LineaPedidosController as BaseController;
 
-class LineasPedidosController extends BaseController
+class LineasPedidoController extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }

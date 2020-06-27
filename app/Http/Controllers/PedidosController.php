@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\PedidosControllers;
+namespace App\Http\PedidoControllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
-use Illuminate\Routing\PedidosController as BaseController;
+use Illuminate\Routing\PedidoController as BaseController;
 
-class PedidosController extends BaseController
+class PedidoController extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
