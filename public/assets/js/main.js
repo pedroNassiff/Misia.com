@@ -32,7 +32,7 @@ $(function() {
     document.querySelector('#header-item-group').classList.toggle('active');
   })
   
-  // Slider
+  // Main Slider
   $('.main-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -41,4 +41,67 @@ $(function() {
     nextArrow: '<img class="slider-arrow arrow--right" src="../assets/images/SVG/arrow-right-white.svg" alt="Arrow Right" />',
     prevArrow: '<img class="slider-arrow arrow--left" src="../assets/images/SVG/arrow-right-white.svg" alt="Arrow Right" />',
   });
+
+  // Slider Vestido a Medida
+  $('.slider-vestido-a-medida-1').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrow: true,
+    nextArrow: '<img class="slider-arrow arrow--right" src="../assets/images/SVG/arrow-right-white.svg" alt="Arrow Right" />',
+    prevArrow: '<img class="slider-arrow arrow--left" src="../assets/images/SVG/arrow-right-white.svg" alt="Arrow Right" />',
+  });
+  $('.slider-vestido-a-medida-2').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrow: true,
+    nextArrow: '<img class="slider-arrow arrow--right" src="../assets/images/SVG/arrow-right-white.svg" alt="Arrow Right" />',
+    prevArrow: '<img class="slider-arrow arrow--left" src="../assets/images/SVG/arrow-right-white.svg" alt="Arrow Right" />',
+  });
+  $('.slider-vestido-a-medida-3').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrow: true,
+    nextArrow: '<img class="slider-arrow arrow--right" src="../assets/images/SVG/arrow-right-white.svg" alt="Arrow Right" />',
+    prevArrow: '<img class="slider-arrow arrow--left" src="../assets/images/SVG/arrow-right-white.svg" alt="Arrow Right" />',
+  });
+  
+  // $('.slider-vestido-a-medida-1').css('display', 'block');
+
+  $('.slider-vestidos').css('opacity', '0');
+  $('.slider-vestido-a-medida-1').css('opacity', '1');
+
+  $('.activar-slider-1').on('click' , function(){
+    console.log('activar-slider-1');
+    $('.slider-vestidos').css('opacity', '0');
+    $('.slider-vestidos').css('z-index', '1');
+    $('.slider-vestido-a-medida-1').css('z-index', '1020');
+    $('.slider-vestido-a-medida-1').css('opacity', '1');
+  });
+
+  $('.activar-slider-2').on('click' , function(){
+    console.log('activar-slider-2');
+    $('.slider-vestidos').css('opacity', '0');
+    $('.slider-vestidos').css('z-index', '1');
+    $('.slider-vestido-a-medida-2').css('z-index', '1020');
+    $('.slider-vestido-a-medida-2').css('opacity', '1');
+  });
+
+  $('.activar-slider-3').on('click' , function(){
+    console.log('activar-slider-3');
+    $('.slider-vestidos').css('opacity', '0');
+    $('.slider-vestidos').css('z-index', '1');
+    $('.slider-vestido-a-medida-3').css('z-index', '1020');
+    $('.slider-vestido-a-medida-3').css('opacity', '1');
+  });
+
+  $('.goTo-1').on('click', function(){
+    $('.slider-vestido-a-medida-1').slick('slickGoTo', 0);
+  })
+  $('.goTo-2').on('click', function(){
+    $('.slider-vestido-a-medida-1').slick('slickGoTo', 1);
+  })
+  $('.goTo-3').on('click', function(){
+    $('.slider-vestido-a-medida-1').slick('slickGoTo', 2);
+  })
+
 });

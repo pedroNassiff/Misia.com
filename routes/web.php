@@ -17,8 +17,12 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/vestidos', function () {
-    return view('home');
+Route::get('/vestidos-a-medida', function () {
+    return view('vestidos');
+});
+
+Route::get('/vestidos-a-medida-dos', function () {
+    return view('vestidos-dos');
 });
 
 Route::get('/asesoramiento', function () {

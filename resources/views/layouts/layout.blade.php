@@ -45,7 +45,7 @@
           <div class="col-6 col-lg-5 my-auto">
             <ul class="header-item-group d-lg-flex justify-lg-content-between">
               <li class="header-item-group__item">
-                <a href="#" class="item-link">
+                <a href="{{ url('/vestidos-a-medida') }}" class="item-link">
                   VESTIDOS A MEDIDA
                 </a>
               </li>
@@ -62,7 +62,7 @@
             </ul>
           </div>
           <div class="col-6 col-lg-2 my-auto">
-            <a href="">
+            <a href="{{ url('/') }}">
               <img src="{{ asset('assets/images/logo-misia.svg') }}" alt="MISIA logo" class="img-fluid header__logo ml-auto ml-lg-0" />
             </a>
           </div>
@@ -99,7 +99,7 @@
                 </ul>
               </li>
               <li class="header-item-group__item rrss yt">
-                <a href="/">
+                <a href="{{ url('/') }}">
                   <span>
                     <img src="{{ asset('assets/images/icon-cart.svg') }}" alt="Icono carrito" class="img-fluid" />
                   </span>

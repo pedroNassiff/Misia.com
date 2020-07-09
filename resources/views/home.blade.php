@@ -51,7 +51,11 @@
   </div>
   <div class="row phrase--gallery">
     <div class="col-12 col-md-4">
-      <img class="img-fluid" src="{{ asset('assets/images/JPG/phrase-1.jpg') }}" alt="" style="width: 100%"/>
+      <video controls>
+        <source autoplay src="{{ asset('assets/video/video.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <!-- <img class="img-fluid" src="{{ asset('assets/images/JPG/phrase-1.jpg') }}" alt="" style="width: 100%"/> -->
     </div>
     <div class="col-12 col-md-4">
       <img class="img-fluid" src="{{ asset('assets/images/JPG/phrase-2.jpg') }}" alt="" style="width: 100%"/>
