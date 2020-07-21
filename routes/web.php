@@ -51,4 +51,47 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+/*users*/
+    Route::get('/users', [
+        'uses' => 'UserController@index',
+        'as' => 'users.main'
+    ]);
+    
+    Route::get('/users/show/{id}', [
+        'uses' => 'UserController@show',
+        'as' => 'users.show'
+    ]);
+    Route::get('/users/edit/{id}', [
+        'uses' => 'UserController@edit',
+        'as' => 'users.edit'
+    ]);
+    Route::post('/users/update/{id}', [
+        'uses' => 'UserController@update',
+        'as' => 'users.update'
+    ]);
+    Route::get('/users/editpassword/{id}', [
+        'uses' => 'UserController@editpassword',
+        'as' => 'users.editpassword'
+    ]);
+    Route::get('/users/password/{id}', [
+        'uses' => 'UserController@updatepassword',
+        'as' => 'users.updatepassword'
+    ]);
+    Route::get('/users/destroy/{id}', [
+        'uses' => 'UserController@destroy',
+        'as' => 'users.destroy'
+    ]);
+    
+    Route::get('/users/create', [
+        'uses' => 'UserController@create',
+        'as' => 'users.create'
+    ]);
+    Route::post('/users/store', [
+        'uses' => 'UserController@store',
+        'as' => 'users.store'
+    ]);
+  
+    
+   
+   
+    
