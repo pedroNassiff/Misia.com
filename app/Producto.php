@@ -7,7 +7,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
 //PREGUNTAR SI VA USER O USUARIO
-class Products extends Authenticatable
+class Producto extends Authenticatable
 {
     use Notifiable;
 

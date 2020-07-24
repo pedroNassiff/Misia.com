@@ -45,16 +45,16 @@
 											<a href="{{ route('users.show', $user->id) }}"><button class="btn btn-complete"><i class="fa fa-eye"></i></button></a> 
 
 											<a href="{{ route('users.edit', $user->id) }}"><button class="btn btn-complete"><i class="fa fa-edit"></i></button></a> 
-											@if(Auth::user()->email == $user->email)
+											
 												<a href="{{ route('users.editpassword', $user->id) }}"><button class="btn btn-complete"><i class="fa fa-key"></i></button></a>
-											@endif
-											@if(Auth::user()->role_id == 1)
+											
+											
 												<a href="{{ route('users.destroy', $user->id) }}" onclick="return confirm('Â¿Desea eliminar el usuario?')" onkeypress="return confirm('Â¿Desea eliminar el usuario?')">
 													<button class="btn btn-complete">
 														<i class="fa fa-remove"></i>
 													</button>
 												</a>
-											@endif
+											
 
 										</td>
 									</tr>

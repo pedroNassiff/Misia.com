@@ -73,7 +73,7 @@ Auth::routes();
         'uses' => 'UserController@editpassword',
         'as' => 'users.editpassword'
     ]);
-    Route::get('/users/password/{id}', [
+    Route::post('/users/updatepassword/{id}', [
         'uses' => 'UserController@updatepassword',
         'as' => 'users.updatepassword'
     ]);
