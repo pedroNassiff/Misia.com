@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\UserControllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\UserController as BaseController;
+use Illuminate\Http\Request;
 use App\Http\Requests\UserRequest;
 use App\Http\Requests\UserEditRequest;
 use App\Http\Requests\UserPasswordRequest;
@@ -13,21 +14,15 @@ use App\User;
 use App\Role;
 use App\Producto;
 
-class UserController extends BaseController
+
+
+class UserController extends Controller
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    public function registro(){
-        require_once '';
-    }
-
-    public function save(){
-        require_once '';
-    }
-
     public function __construct()
     {
-         $this->middleware('auth');
+         //$this->middleware('auth');
     }
 
     public function index()
@@ -52,7 +47,7 @@ class UserController extends BaseController
 
         }catch (\Exception $e) {
 
-            flash("Algo salió  mal, intente de nuevo.", 'danger');
+            //flash("Algo salió  mal, intente de nuevo.", 'danger');
             return redirect()->route('users.main');     
         }
     }
@@ -66,12 +61,12 @@ class UserController extends BaseController
 
             $user->save();
 
-            flash("Se ha registrado " . $user->name . " de forma exitosa.");
+            //flash("Se ha registrado " . $user->name . " de forma exitosa.");
             return redirect()->route('users.main');
 
         }catch (\Exception $e) {
 
-            flash("Algo salió mal, intente de nuevo.", 'danger');
+            //flash("Algo salió mal, intente de nuevo.", 'danger');
             return redirect()->route('users.main');      
         }
     }
@@ -91,13 +86,13 @@ class UserController extends BaseController
             }
             else
             {
-                flash("Algo salió mal, intente de nuevo.", 'danger');
+                //flash("Algo salió mal, intente de nuevo.", 'danger');
             	return redirect()->route('users.main');        
             }
 
         }catch (\Exception $e) {
 
-            flash("Algo salió mal, intente de nuevo.", 'danger');
+           // flash("Algo salió mal, intente de nuevo.", 'danger');
             return redirect()->route('users.main');         
         }
     }
@@ -116,13 +111,13 @@ class UserController extends BaseController
             }
             else
             {
-                flash("Algo salió mal, intente de nuevo.", 'danger');
+                //flash("Algo salió mal, intente de nuevo.", 'danger');
             	return redirect()->route('users.main');         
             }
 
         }catch (\Exception $e) {
 
-            flash("Algo salió mal, intente de nuevo.", 'danger');
+            //flash("Algo salió mal, intente de nuevo.", 'danger');
             return redirect()->route('users.main');       
         }
     }
@@ -138,13 +133,12 @@ class UserController extends BaseController
 
             $user->save();
 
-            flash("El usuario " . $user->name . " ha sido actualizado de forma exitosa.");
+            //flash("El usuario " . $user->name . " ha sido actualizado de forma exitosa.");
 
             return redirect()->route('users.main');
 
         }catch (\Exception $e) {
 
-            flash("Algo salió mal, intente de nuevo.", 'danger');
             return redirect()->route('users.main');         
         }
     }
@@ -161,13 +155,11 @@ class UserController extends BaseController
             }
             else
             {
-                flash("Algo salió mal, intente de nuevo.", 'danger');
                 return redirect()->route('users.main');        
             }
 
         }catch (\Exception $e) {
 
-            flash("Algo salió mal, intente de nuevo.", 'danger');
             return redirect()->route('users.main');         
         }
     }
@@ -181,23 +173,20 @@ class UserController extends BaseController
 
             $user = User::find($id);
 
-            if (\Hash::check(Input::get('password'), $user->password))
+            if (\Hash::check($request->password, $user->password))
             {
-                $user->password = bcrypt(Input::get('new_password'));
+                $user->password = bcrypt($request->new_password);
                 $user->save();
 
-                flash("Se ha actualizado la contraseÃ±a de forma exitosa.");
                 return redirect()->route('users.main');
             }
             else
             {
-                flash("ContraseÃ±a actual invÃ¡lida.", 'danger');
                 return redirect()->route('users.main');
             }
 
         }catch (\Exception $e) {
 
-            flash("Algo salió mal, intente de nuevo.", 'danger');
             return redirect()->route('users.main');      
         }
     }
@@ -209,7 +198,7 @@ class UserController extends BaseController
             $user = User::find($id);
             $message = "";
 
-            $articles = Producto::where('user_id', $user->id)->get();
+            /*$articles = Producto::where('user_id', $user->id)->get();
 
             //If user have not any article
             if($articles->count() == 0)
@@ -220,14 +209,13 @@ class UserController extends BaseController
             else
             {
                 $message = " no puede ser eliminado (relaciÃ³n con otras entidades).";
-            }     
-
-            flash("El usuario " . $user->name . $message);
+            }  
+            */   
+            $user->delete();
             return redirect()->route('users.main');
 
         }catch (\Exception $e) {
             
-            flash("Algo salió mal, intente de nuevo.", 'danger');
             return redirect()->route('users.main');         
         }
     }
