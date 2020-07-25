@@ -104,4 +104,23 @@ $(function() {
     $('.slider-vestido-a-medida-1').slick('slickGoTo', 2);
   })
 
+  // Gallery 
+  $('.gallery').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    tLoading: 'Cargando #%curr%...',
+    mainClass: 'mfp-img-mobile',
+    gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+    },
+    image: {
+      tError: '<a href="%url%">La imagene #%curr%</a> no se puede cargar.',
+      titleSrc: function(item) {
+        return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+      }
+    }
+  });
+
 });

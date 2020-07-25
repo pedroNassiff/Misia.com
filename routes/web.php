@@ -25,12 +25,20 @@ Route::get('/vestidos-a-medida-dos', function () {
     return view('vestidos-dos');
 });
 
+Route::get('/detalle-de-compra', function () {
+    return view('detalle-de-compra');
+});
+
+Route::get('/clientes', function () {
+    return view('customers');
+});
+
 Route::get('/asesoramiento', function () {
     return view('home');
 });
 
-Route::get('/we-are-misia', function () {
-    return view('home');
+Route::get('/somos-misia', function () {
+    return view('we-are-misia');
 });
 
 Route::get('/contacto', function () {

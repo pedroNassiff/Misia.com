@@ -399,3 +399,62 @@ a:focus{
 .item-color.violeta{
   background: #73187a;
 }
+form .col-form-label{
+  border: 1px solid #000000;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+form .form-control{
+  border: 1px solid #000000;
+  height: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #000000;
+}
+.vestidos-a-medida .btn-generic{
+  padding: 0px 15px;
+  letter-spacing: 1px;
+}
+.vestidos-a-medida .terms{
+  font-size: 0.9rem;
+  color:  #6a6e77;
+  font-style: italic;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+/*
+Galería de clientes 
+*/
+.section-gallery, .we-are-misia{
+  padding-top: 6.5rem;
+  padding-bottom: 5rem;
+}
+.gallery .col{
+  padding-right: 7px;
+  padding-left: 7px;
+}
+.gallery .gallery__item{
+  max-width: 200px;
+  margin-bottom: 12px;
+}
+.gallery .gallery__item img{
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  height: 171px;
+  width: 100%;
+}
+.mfp-bottom-bar{
+  display: none;
+}
+.mfp-bg{
+  opacity: 0.9;
+}
+
+/*
+We are Misia
+*/
+.misia-text{
+  font-size: 18px;
+  line-height: 1.7;
+}

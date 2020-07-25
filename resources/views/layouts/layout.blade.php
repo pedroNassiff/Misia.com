@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Misia - Tienda Online</title>
+    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -55,7 +56,7 @@
                 </a>
               </li>
               <li class="header-item-group__item">
-                <a href="" class="item-link" >
+                <a href="{{ url('/clientes') }}" class="item-link" >
                   CLIENTES
                 </a>
               </li>
@@ -69,7 +70,7 @@
           <div class="col-6 col-lg-5 my-auto">
             <ul class="header-item-group d-lg-flex justify-lg-content-between">
               <li class="header-item-group__item">
-                <a href="" class="item-link" >
+                <a href="{{ url('/somos-misia') }}" class="item-link" >
                   SOMOS MISIA
                 </a>
               </li>
@@ -261,6 +262,7 @@
     <!-- Libraries -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="{{ asset('assets/js/magnific-popup.js') }}"></script>
 
     <!-- Scripts -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
