@@ -7,8 +7,8 @@
 <section class="we-are-misia">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-6 h-condensed">
-        <h1 class="step mb-4"> #SOMOSMISIA </h1>
+      <div class="col-12 col-md-5 h-condensed pr-0">
+        <h1 class="step mb-5"> #SOMOSMISIA </h1>
         <div class="misia-text h-condensed">
           <p class="mb-4">Dos amigas que se asociaron por un proyecto en común: crear una marca de vestidos de fiesta, hechos y a medida, versátiles, elegantes, accesibles y con mucha onda.</p>
           <p class="">Nuestro TEAM está compuesto por:</p>
@@ -18,7 +18,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-12 col-md-5 offset-1">
+      <div class="col-12 col-md-5 offset-2">
         <img class="img-fluid" src="{{ asset('assets/images/JPG/we-are-misia.jpg') }}" alt="Somos Misia" />
       </div>
     </div>

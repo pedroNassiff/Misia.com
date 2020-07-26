@@ -45,17 +45,17 @@
         <div class="row">
           <div class="col-6 col-lg-5 my-auto">
             <ul class="header-item-group d-lg-flex justify-lg-content-between">
-              <li class="header-item-group__item">
+              <li class="header-item-group__item {{ Request::segment(1) === 'vestidos-a-medida' ? 'active' : null }}">
                 <a href="{{ url('/vestidos-a-medida') }}" class="item-link">
                   VESTIDOS A MEDIDA
                 </a>
               </li>
-              <li class="header-item-group__item">
-                <a href="#" class="item-link" >
+              <li class="header-item-group__item {{ Request::segment(1) === 'asesoramiento' ? 'active' : null }}">
+                <a href="{{ url('/asesoramiento') }}" class="item-link" >
                   ASESORAMIENTO
                 </a>
               </li>
-              <li class="header-item-group__item">
+              <li class="header-item-group__item {{ Request::segment(1) === 'clientes' ? 'active' : null }}">
                 <a href="{{ url('/clientes') }}" class="item-link" >
                   CLIENTES
                 </a>
@@ -69,17 +69,17 @@
           </div>
           <div class="col-6 col-lg-5 my-auto">
             <ul class="header-item-group d-lg-flex justify-lg-content-between">
-              <li class="header-item-group__item">
+              <li class="header-item-group__item {{ Request::segment(1) === 'somos-misia' ? 'active' : null }}">
                 <a href="{{ url('/somos-misia') }}" class="item-link" >
                   SOMOS MISIA
                 </a>
               </li>
-              <li class="header-item-group__item">
+              <li class="header-item-group__item {{ Request::segment(1) === 'contacto' ? 'active' : null }}">
                 <a href="#" class="item-link" >
                   CONTACTO
                 </a>
               </li>
-              <li class="header-item-group__item">
+              <li class="header-item-group__item {{ Request::segment(1) === 'perfil' ? 'active' : null }}">
                 <a class="item-link" >
                   MI CUENTA
                 </a>

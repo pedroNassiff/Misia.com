@@ -34,7 +34,7 @@ Route::get('/clientes', function () {
 });
 
 Route::get('/asesoramiento', function () {
-    return view('home');
+    return view('asesoramiento');
 });
 
 Route::get('/somos-misia', function () {
