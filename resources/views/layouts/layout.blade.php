@@ -75,7 +75,7 @@
                 </a>
               </li>
               <li class="header-item-group__item {{ Request::segment(1) === 'contacto' ? 'active' : null }}">
-                <a href="#" class="item-link" >
+                <a href="{{ url('/contacto') }}" class="item-link" >
                   CONTACTO
                 </a>
               </li>

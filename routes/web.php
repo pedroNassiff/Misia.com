@@ -42,7 +42,7 @@ Route::get('/somos-misia', function () {
 });
 
 Route::get('/contacto', function () {
-    return view('home');
+    return view('contact');
 });
 
 Route::get('/mi-cuenta', function () {
