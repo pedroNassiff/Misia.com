@@ -326,6 +326,9 @@ a:focus{
   outline: 0;
   box-shadow: none;
 }
+.section-register .col-form-label, .section-login .col-form-label{
+  border: 0;
+}
 /* Vestidos a medida */
 .vestidos-a-medida{
   margin-top: 95px;
@@ -484,4 +487,29 @@ Advice
   height: 2px;
   bottom: -3px;
   background-color: #424753;
+}
+
+/* 
+Contact
+*/
+.contact{
+  padding-top: 6.5rem;
+  padding-bottom: 5rem;
+}
+.contact form label{
+  margin-bottom: 7px;
+  font-family: 'Helvetica Condensed', sans-serif;
+}
+.contact form label span{
+  font-family: 'Helvetica Condensed', sans-serif;
+  font-style: italic;
+}
+
+@media (min-width: 768px){
+  .contact form input{
+    width: 50%;
+  }
+  .contact form textarea{
+    width: 70%;
+  }
 }
