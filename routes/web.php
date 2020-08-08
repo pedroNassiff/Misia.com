@@ -21,6 +21,7 @@ Route::get('/vestidos-a-medida', function () {
     return view('vestidos');
 });
 
+
 Route::get('/vestidos-a-medida-dos', function () {
     return view('vestidos-dos');
 });
@@ -59,7 +60,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
-/*users*/
+    /*users*/
     Route::get('/users', [
         'uses' => 'UserController@index',
         'as' => 'users.main'
@@ -99,7 +100,10 @@ Auth::routes();
         'as' => 'users.store'
     ]);
   
+
+
+/*producto*/
+    Route::get('/products', 'ProductController@getHome');
     
-   
-   
     
+  

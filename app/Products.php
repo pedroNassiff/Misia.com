@@ -3,10 +3,10 @@
 namespace App;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Foundation\Auth\Producto as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-//PREGUNTAR SI VA USER O USUARIO
+
 class Producto extends Authenticatable
 {
     use Notifiable;
@@ -19,4 +19,9 @@ class Producto extends Authenticatable
     protected $fillable = [
         'id', 'nombre', 'descripcion', 'precio', 'stock', 'categoria_id', 'oferta', 'fecha', 'imagen',
     ];
+
+    public function getProducto(){
+        $producto = $this->db->query("SELECT * FROM producto;");
+        return $producto;
+    }
 }

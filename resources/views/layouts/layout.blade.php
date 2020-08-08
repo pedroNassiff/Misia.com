@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="{{ asset('assets/css/navbar.css') }}"/> 
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}"/> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   </head>
   <body>
     @if (Route::has('login'))
