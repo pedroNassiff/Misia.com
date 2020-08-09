@@ -1,5 +1,14 @@
+@extends('admin.master')
 
+@section('title', 'Usuarios')
 
+@section('breadcrumb')
+<li class="breadcrumb-item">
+	<a href="{{ url('/admin/users') }}"><i class="fas fa-users-friends"></i>Usuarios</a>
+</li>
+@endsection
+
+@section('content')
 	<section class="height-basic">
 	    <div class="container" style="margin-top: 180px; margin-bottom: 180px;">
 	        <div class="row">
@@ -69,4 +78,4 @@
 			</div>
 		</div>
 	</section>
-
+@endsection
