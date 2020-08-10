@@ -10,10 +10,14 @@ class ProductController extends Controller
     public function __construct()
     {
          $this->middleware('auth');
-         //$this->middleware('isadmin');
+         $this->middleware('isadmin');
     }
 
     public function getHome(){
-        return 'Hola Mundo de los vestidos';
+        return view('admin.products.index');
+    }
+
+    public function getProductAdd(){
+        return view('admin.products.add');
     }
 }

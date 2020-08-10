@@ -51,14 +51,14 @@
 										</td>
 										<td class="v-align-middle">
 										<td class="v-align-middle">
-											<a href="{{ route('users.show', $user->id) }}"><button class="btn btn-complete"><i class="fa fa-eye"></i></button></a> 
+											<a href="{{ route('users.show', $user->id) }}"><button class="btn btn-complete" ><i class="fa fa-eye"></i></button></a> 
 
-											<a href="{{ route('users.edit', $user->id) }}"><button class="btn btn-complete"><i class="fa fa-edit"></i></button></a> 
+											<a href="{{ route('users.edit', $user->id) }}" data-toggle="tooltip" data-placement="top" title="Editar"><button class="btn btn-complete"><i class="fa fa-edit"></i></button></a> 
 											
-												<a href="{{ route('users.editpassword', $user->id) }}"><button class="btn btn-complete"><i class="fa fa-key"></i></button></a>
+												<a href="{{ route('users.editpassword', $user->id) }}" data-toggle="tooltip" data-placement="top" title="Cambiar contraseña"><button class="btn btn-complete"><i class="fa fa-key"></i></button></a>
 											
 											
-												<a href="{{ route('users.destroy', $user->id) }}" onclick="return confirm('Â¿Desea eliminar el usuario?')" onkeypress="return confirm('Â¿Desea eliminar el usuario?')">
+												<a href="{{ route('users.destroy', $user->id) }}" onclick="return confirm('Â¿Desea eliminar el usuario?')" onkeypress="return confirm('Â¿Desea eliminar el usuario?')" data-toggle="tooltip" data-placement="top" title="Eliminar">
 													<button class="btn btn-complete">
 														<i class="fa fa-remove"></i>
 													</button>
