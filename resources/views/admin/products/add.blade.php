@@ -188,6 +188,12 @@
                 </div>
             </div>
 
+            <div class="row mtop16">
+                <div class="cold-md-12">
+                    {!! Form::submit('Guardar', ['class' => 'btn btn-success']) !!}
+                </div>
+            </div>
+
                 {!! Form::close() !!}
             </div>
         </div>
