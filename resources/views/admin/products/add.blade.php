@@ -33,7 +33,7 @@
                                             
                                         </span>
                                     </div>
-                                    {!! Form::text('name', null, ['class' => 'form-control']) !!}
+                                    {!! Form::text('name', null, ['class' => 'form-control', 'name' => 'name']) !!}
                                 </div>
                             </div>
                     </div>
@@ -41,129 +41,129 @@
                     <div class="row">
                         <div class="cold-md-4">
                             <label for="name">Color 1</label>
-                                <label for="name"></label>
+                                <label for="color1"></label>
                                     {!! Form::text('name', null, ['class' => 'form-control']) !!}
-                            <input name="color" type="color" value="#000000" />
+                            <input name="color1_a" type="color" value="#000000" />
                         </div>
                             <div class="cold-md-4">
                                 <label for="name">Color 2</label>
-                                <label for="name"></label>
+                                <label for="color"></label>
                                     {!! Form::text('name', null, ['class' => 'form-control']) !!}
-                                <input name="color" type="color" value="#000000" />
+                                <input name="color2_a" type="color" value="#000000" />
                             </div>
                                 <div class="cold-md-4">
                                     <label for="name">Color 3</label>
-                                    <label for="name"></label>
+                                    <label for="color3"></label>
                                     {!! Form::text('name', null, ['class' => 'form-control']) !!}
-                                    <input name="color" type="color" value="#000000" />
+                                    <input name="color3_a" type="color" value="#000000" />
                                 </div>
                                 <div class="cold-md-4">
                             <label for="name">Color 4</label>
-                            <label for="name"></label>
+                            <label for="color4"></label>
                                     {!! Form::text('name', null, ['class' => 'form-control']) !!}
-                            <input name="color" type="color" value="#000000" />
+                            <input name="color4_a" type="color" value="#000000" />
                         </div>
                             <div class="cold-md-4">
                                 <label for="name">Color 5</label>
-                                <label for="name"></label>
+                                <label for="color5"></label>
                                     {!! Form::text('name', null, ['class' => 'form-control']) !!}
-                                <input name="color" type="color" value="#000000" />
+                                <input name="color5_a" type="color" value="#000000" />
                             </div>
                                 <div class="cold-md-4">
                                     <label for="name">Color 6</label>
-                                    <label for="name"></label>
+                                    <label for="color6"></label>
                                     {!! Form::text('name', null, ['class' => 'form-control']) !!}
-                                    <input name="color" type="color" value="#000000" />
+                                    <input name="color6_a" type="color" value="#000000" />
                                 </div>
                         <div class="cold-md-4">
                             <label for="name">Color 7</label>
-                            <label for="name"></label>
+                            <label for="color7"></label>
                                     {!! Form::text('name', null, ['class' => 'form-control']) !!}
-                            <input name="color" type="color" value="#000000" />
+                            <input name="color7_a" type="color" value="#000000" />
                             
                         </div>
                         <div class="cold-md-4">
                                 <label for="name">Color 8</label>
-                                <label for="name"></label>
+                                <label for="color8"></label>
                                     {!! Form::text('name', null, ['class' => 'form-control']) !!}
-                                <input name="color" type="color" value="#000000" />
+                                <input name="color8_a" type="color" value="#000000" />
                             </div>
                                
                         </div>
                             <div class="row">
                                 <div class="cold-md-4">
                                     <label for="name">Color 9</label>
-                                    <label for="name"></label>
+                                    <label for="color9"></label>
                                     {!! Form::text('name', null, ['class' => 'form-control']) !!}
-                                    <input name="color-11" type="color" value="#000000" />
+                                    <input name="color9_a" type="color" value="#000000" />
                                 </div>
                                 <div class="cold-md-4">
                             <label for="name">Color 10</label>
-                            <label for="name"></label>
+                            <label for="color10"></label>
                                     {!! Form::text('name', null, ['class' => 'form-control']) !!}
-                            <input name="color-10" type="color" value="#000000" />
+                            <input name="color10_a" type="color" value="#000000" />
                         </div>
                             <div class="cold-md-4">
                                 <label for="name">Color 11</label>
-                                <label for="name"></label>
+                                <label for="color11"></label>
                                     {!! Form::text('name', null, ['class' => 'form-control']) !!}
-                                <input name="color-11" type="color" value="#000000" />
+                                <input name="color11_a" type="color" value="#000000" />
                             </div>
                                 <div class="cold-md-4">
                                     <label for="name">Color 12</label>
-                                    <label for="name"></label>
+                                    <label for="color12"></label>
                                     {!! Form::text('name', null, ['class' => 'form-control']) !!}
-                                    <input name="color-12" type="color" value="#000000" />
+                                    <input name="color12_a" type="color" value="#000000" />
                                 </div>
                          </div>
                          </div>
              <!--Medidas-->
                         <div class="row">
                             <div class="cold-md-6">
-                                <label for="control-busto">Control de busto</label>
-                                    {!!  Form::checkbox('busto', 'value') !!}
+                                <label for="cont_bust">Control de busto</label>
+                                    {!!  Form::checkbox('cont_bust', 'value') !!}
                             </div>
                         </div>
                         <div class="row">
                             <div class="cold-md-6">
-                                <label for="contorno-cintura">Contorno de cintura</label>
-                                    {!!  Form::checkbox('cont-cintura', 'value') !!}
+                                <label for="cont_cint">Contorno de cintura</label>
+                                    {!!  Form::checkbox('cont_cint', 'value') !!}
                             </div>
                         </div>
                         <div class="row">
                             <div class="cold-md-6">
-                                <label for="contorno-cadera">Contorno de cadera</label>
-                                    {!!  Form::checkbox('cont-cadera', 'value') !!}
+                                <label for="cont_cadera">Contorno de cadera</label>
+                                    {!!  Form::checkbox('cont_cadera', 'value') !!}
                             </div>
                         </div>
                         <div class="row">
                             <div class="cold-md-6">
-                                <label for="largo-cintura">Largo desde cintura</label>
-                                    {!!  Form::checkbox('largo-cintura', 'value') !!}
+                                <label for="lar_cint">Largo desde cintura</label>
+                                    {!!  Form::checkbox('lar_cint', 'value') !!}
                             </div>
                         </div>
                         <div class="row">
                             <div class="cold-md-6">
-                                <label for="largo-mangas">Largo mangas</label>
-                                    {!!  Form::checkbox('mangas', 'value') !!}
+                                <label for="larg_mang">Largo mangas</label>
+                                    {!!  Form::checkbox('lar_mang', 'value') !!}
                             </div>
                         </div>
                         <div class="row">
                             <div class="cold-md-6">
-                                <label for="contorno-brazo">Contorno de Brazo</label>
-                                    {!!  Form::checkbox('brazo', 'value') !!}
+                                <label for="cont_bra">Contorno de Brazo</label>
+                                    {!!  Form::checkbox('cont_braz', 'value') !!}
                             </div>
                         </div>
                         <div class="row">
                             <div class="cold-md-6">
-                                <label for="largo-tajo">Largo de tajo</label>
-                                {!!  Form::checkbox('brazo', 'value') !!}
+                                <label for="larg_taj">Largo de tajo</label>
+                                {!!  Form::checkbox('larg_taj', 'value') !!}
                             </div>
                         </div>
                         <div class="row">
                             <div class="cold-md-6">
-                                <label for="contorno-brazo">Tipo de bretel</label>
-                                {!!  Form::checkbox('brazo', 'value') !!}
+                                <label for="tip_bret">Tipo de bretel</label>
+                                {!!  Form::checkbox('tip_bret', 'value') !!}
                             </div>
                         </div>
                         
@@ -173,7 +173,7 @@
                             <div class="cold-md-3">
                                 <label for="name">Imagen Destacada</label>
                                 <div class="custom-file">
-                                    {!! Form::file('img', ['class' => 'custom-file-input', 'id' => 'customFile' ]) !!}
+                                    {!! Form::file('img', ['class' => 'custom-file-input', 'id' => 'customFile', 'name' => 'img']) !!}
                                     <label class="custom-file-label" for="customFile">Seleccionar imagen</label>
                                 </div>
                             </div>
@@ -184,7 +184,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <label for="price">Precio</label>
-                    {!! Form::number('price', null, ['class' => 'form-control', 'min' => '0.00', 'step' => 'any']) !!}
+                    {!! Form::number('price', null, ['class' => 'form-control', 'min' => '0.00', 'step' => 'any', 'name' => 'price']) !!}
                 </div>
             </div>
 

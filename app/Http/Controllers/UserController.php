@@ -12,7 +12,7 @@ use App\Http\Requests\UserEditRequest;
 use App\Http\Requests\UserPasswordRequest;
 use App\User;
 use App\Role;
-use App\Producto;
+use App\Products;
 
 
 

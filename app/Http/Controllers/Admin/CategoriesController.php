@@ -1,16 +1,17 @@
 <?php
 
-namespace App\Http\CategoriaControllers;
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\CategoriaPedidosController as BaseController;
 
-class CategoriasController extends BaseController
+class CategoriesController extends Controller
 {
-    use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
-
     public function __construct(){
         $this->middleware('auth');
         $this->middleware('isadmin');

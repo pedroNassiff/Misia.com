@@ -8,5 +8,8 @@ Route::prefix('/admin')->group(function(){
     //Módulo de productos
     Route::get('/products', 'ProductController@index');
     Route::get('/products/add', 'ProductController@getProductAdd');
+    Route::post('/products/add', 'ProductController@postProductAdd');
 
+    //Módulo de categories
+    Route::get('/categories', 'CategoriasController@getHome');
 });
