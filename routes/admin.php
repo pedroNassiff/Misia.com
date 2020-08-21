@@ -5,11 +5,14 @@ Route::prefix('/admin')->group(function(){
     Route::get('/users', 'userController@index');
 
 
-    //Módulo de productos
+    //MÃ³dulo de productos
     Route::get('/products', 'ProductController@index');
     Route::get('/products/add', 'ProductController@getProductAdd');
-    Route::post('/products/add', 'ProductController@postProductAdd');
+     Route::post('/products/add', [
+        'uses' => 'ProductController@postProductAdd',
+        'as' => 'products.store'
+    ]);
 
-    //Módulo de categories
+    //MÃ³dulo de categories
     Route::get('/categories', 'CategoriasController@getHome');
 });
