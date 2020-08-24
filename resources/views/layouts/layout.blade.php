@@ -16,20 +16,6 @@
 
   </head>
   <body>
-    @if (Route::has('login'))
-      <div class="top-right links">
-          @auth
-              <a href="{{ url('/home') }}">Home</a>
-          @else
-              <a href="{{ route('login') }}">Login</a>
-
-              @if (Route::has('register'))
-                  <a href="{{ route('register') }}">Register</a>
-              @endif
-          @endauth
-      </div>
-    @endif
-
     <!-- Loader -->
     <div id="placeholder" class="position-fixed">
       <div class="d-flex justify-content-center align-items-center">
@@ -86,19 +72,31 @@
                   MI CUENTA
                 </a>
                 <ul class='item-group sub-group'>
-                  <li class='item sub-item'>
-                    <a href="/login" class='item-link'>
-                      INGRESAR
-                    </a>
-                  </li>
-                  <li class='item sub-item'>
-                    <a
-                      href="/register"
-                      class='item-link'
-                    >
-                      CREAR CUENTA
-                    </a>
-                  </li>
+                  @if (Route::has('login'))
+                    @auth
+                      <!-- Estoy logueado -->
+                      <li class='item sub-item'>
+                        <a href="{{ url('/logout') }}" class='item-link'>
+                          SAlIR
+                        </a>
+                      </li>
+                    @else
+                      <!-- No estoy logueado -->
+                      <li class='item sub-item'>
+                        <a href="{{ url('/login') }}" class='item-link'>
+                          INGRESAR
+                        </a>
+                      </li>
+                      <li class='item sub-item'>
+                        <a
+                          href="{{ url('/register') }}"
+                          class='item-link'
+                        >
+                          CREAR CUENTA
+                        </a>
+                      </li>
+                    @endauth
+                  @endif
                 </ul>
               </li>
               <li class="header-item-group__item rrss yt">
@@ -208,30 +206,30 @@
           <div class="col-md-2">
             <ul class="g-medium footer-link">
               <li>
-                <p>Sobre Misia</p>
+                <a href="{{ url('/somos-misia') }}"><p>Sobre Misia</p></a>
               </li>
               <li>
-                <p>Envíos</p>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-2">
-            <ul class="g-medium footer-link">
-              <li>
-                <p>FAQs</p>
-              </li>
-              <li>
-                <p>Contacto</p>
+                <a href="{{ url('/') }}"><p>Envíos</p></a>
               </li>
             </ul>
           </div>
           <div class="col-md-2">
             <ul class="g-medium footer-link">
               <li>
-                <p>Instagram</p>
+                <a href="{{ url('/') }}"><p>FAQs</p></a>
               </li>
               <li>
-                <p>Facebook</p>
+                <a href="{{ url('/contacto') }}"><p>Contacto</p></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <ul class="g-medium footer-link">
+              <li>
+                <a href="https://www.instagram.com/misia.misia/" target="_blank"><p>Instagram</p></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/misiaindumentaria" target="_blank"><p>Facebook</p></a>
               </li>
             </ul>
           </div>

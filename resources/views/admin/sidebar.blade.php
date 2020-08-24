@@ -1,4 +1,4 @@
-<div class="sidebar shadow">
+<div class="sidebar shadow col-2">
     <div class="section-top">
         <div class="logo">
             <img src="{{ url('assets/images/logo-misia.svg') }}" class="img-fluid">

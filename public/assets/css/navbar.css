@@ -233,6 +233,7 @@ table {
   padding-top: 60px;
   height: auto;
   opacity: 1;
+  width: 100%;
 }
 .header-item-group__item:hover .sub-group .sub-item {
   display: inline-block;
