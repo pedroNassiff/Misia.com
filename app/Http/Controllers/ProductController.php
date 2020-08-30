@@ -24,9 +24,7 @@ class ProductController extends Controller
     }
 
     public function postProductAdd(Request $request){
-        
-        
-
+        return DD($request);
         $rules = [
             'name' => 'required',
             'img' => 'required',
@@ -42,52 +40,44 @@ class ProductController extends Controller
 
        $validator = Validator::make($request->all(), $rules, $messages);
 
-        return print_r($validator);
-        
-        if($validator->fails()):
-            return print('mensageIF');
+        if($validator->fails()){
+
+           
             return back()->withErrors($validator)->with('message', 'Se ha producido un error.')->with(
-             'typealert', 'danger')->withInput();
-              else:
+                'typealert', 'danger')->withInput();
+        }else{
+            $product = new Product;
+            $product->status = '0';
+            $product->name = e($request->input('name'));
+            $product->color1 = $request->input('color1');
+            $product->color2 = $request->input('color2');
+            $product->color3 = $request->input('color3');
+            $product->color4 = $request->input('color4');
+            $product->color5 = $request->input('color5');
+            $product->color6 = $request->input('color6');
+            $product->color7 = $request->input('color7');
+            $product->color8 = $request->input('color8');
+            $product->color9 = $request->input('color9');
+            $product->color10 = $request->input('color10');
+            $product->color11 = $request->input('color11');
+            $product->color12 = $request->input('color12');
+            $product->cont_bust = $request->input('cont_bust');
+            $product->cont_cint = $request->input('cont_cint');
+            $product->cont_cadera = $request->input('cont_cadera');
+            $product->lar_cint = $request->input('lar_cint');
+            $product->lar_mang = $request->input('lar_mang');
+            $product->lar_mang = $request->input('cont_braz');
+            $product->lar_mang = $request->input('larg_taj');
+            $product->tip_bret = $request->input('tip_bret');
             
-        
-                $product = new Product;
+            $product->price = $request->input('price');
+            $product->slug = Str::slug($request->input('name'));
 
-                return print('mensageElse');
-
-                $product->status = '0';
-                $product->name = e($request->input('name'));
-                $product->color1 = $request->input('color1');
-                $product->color2 = $request->input('color2');
-                $product->color3 = $request->input('color3');
-                $product->color4 = $request->input('color4');
-                $product->color5 = $request->input('color5');
-                $product->color6 = $request->input('color6');
-                $product->color7 = $request->input('color7');
-                $product->color8 = $request->input('color8');
-                $product->color9 = $request->input('color9');
-                $product->color10 = $request->input('color10');
-                $product->color11 = $request->input('color11');
-                $product->color12 = $request->input('color12');
-                $product->cont_bust = $request->input('cont_bust');
-                $product->cont_cint = $request->input('cont_cint');
-                $product->cont_cadera = $request->input('cont_cadera');
-                $product->lar_cint = $request->input('lar_cint');
-                $product->lar_mang = $request->input('lar_mang');
-                $product->lar_mang = $request->input('cont_braz');
-                $product->lar_mang = $request->input('larg_taj');
-                $product->tip_bret = $request->input('tip_bret');
-                
-                $product->price = $request->input('price');
-                $product->slug = Str::slug($request->input('name'));
-
-                
-
-                if($product->save()):
-                    return redirect('/admin/products/index')->with('message', 'Guardado con éxito.')->with('
-                    typealert', 'danger');
-                endif;
-            endif;
+            if($product->save()){
+                return redirect('/admin/products/index')->with('message', 'Guardado con éxito.')
+                                                            ->with('typealert', 'danger');
+            }   
+        }
     }
 }
 
