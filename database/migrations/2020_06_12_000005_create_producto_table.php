@@ -19,7 +19,7 @@ class CreateProductoTable extends Migration
             $table->string('descripcion');
             $table->float('precio');
             $table->integer('stock');
-            $table->integer('categoria_id');
+            $table->bigInteger('categoria_id')->unsigned();
             $table->foreign('categoria_id')->references('id')->on('categorias')->onDelete('cascade')->onUpdate('cascade');
             $table->integer('oferta');
             $table->date('fecha');
