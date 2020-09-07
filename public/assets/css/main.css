@@ -516,3 +516,36 @@ Contact
     width: 70%;
   }
 }
+
+/* Carrito */
+.card-payment{
+  border: 1px solid #ccc;
+  margin-top: 2rem;
+  padding: 1.5rem
+}
+.form-check-label{
+  position: relative;
+}
+.logos-pagos{
+  position: absolute;
+  right: -75px;
+  top: -8px;
+}
+.logos-pagos.visa{
+  width: 50px;
+}
+.logos-pagos.paypal{
+  width: 60px;
+}
+.paypal-link{
+  float: right;
+}
+
+.card-payment .btn-generic{
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.bold{
+  font-weight: 700;
+}

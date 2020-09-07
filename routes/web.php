@@ -50,6 +50,10 @@ Route::get('/mi-cuenta', function () {
     return view('home');
 });
 
+Route::get('/finalizar-compra', function () {
+    return view('finalizar-compra');
+});
+
 Route::get('/carrito', function () {
     return view('home');
 });
