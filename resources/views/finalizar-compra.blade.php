@@ -80,31 +80,31 @@
           <div class="col-8 mb-1">
             <p class="mb-0 py-1"> Guernica a medida </p>
           </div>
-          <div class="col-4 mb-1">
+          <div class="col-4 mb-1 text-right text-md-left">
             <p class="mb-0 py-1"> $11.900 </p>
           </div>
           <div class="col-8 mb-1">
             <p class="mb-0 py-1"> Bretel con aplique </p>
           </div>
-          <div class="col-md-4 mb-1">
+          <div class="col-4 mb-1 text-right text-md-left">
             <p class="mb-0 py-1"> $1.500 </p>
           </div>
           <div class="col-8 mb-1">
             <p class="mb-0 py-1"> Subtotal </p>
           </div>
-          <div class="col-4 mb-1">
+          <div class="col-4 mb-1 text-right text-md-left">
             <p class="mb-0 py-1"> $11.900 </p>
           </div>
           <div class="col-8 mb-1">
             <p class="mb-0 py-1"> Impuestos </p>
           </div>
-          <div class="col-4 mb-1">
+          <div class="col-4 mb-1 text-right text-md-left">
             <p class="mb-0 py-1"> $0.00 </p>
           </div>
           <div class="col-8 mb-1">
             <p class="mb-0 py-1 bold"> Total </p>
           </div>
-          <div class="col-md-4 mb-1">
+          <div class="col-4 mb-1 text-right text-md-left">
             <p class="mb-0 py-1 bold"> $13.400 </p>
           </div>
         </div>

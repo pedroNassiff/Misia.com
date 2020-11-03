@@ -373,14 +373,16 @@ a:focus{
   opacity: 1;
   z-index: 1020;
 }
-.slider-vestido-a-medida-2{
-  opacity: 1;
-}
-.slider-vestido-a-medida-3{
-  opacity: 1;
+@media (max-width: 770px){
+  .slider-vestidos{
+    position: relative;
+    top: 0;
+  }
 }
 .card-color{
   text-align: center;
+  margin-bottom: 15px;
+  text-transform: capitalize;
 }
 .card-color .item-color{
   width: 55px;
@@ -388,23 +390,29 @@ a:focus{
   background-color: black;
   border-radius: 50%;
   margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
+  position: relative;
+  border: 7px solid transparent;
+  transition: all 0.5s;
 }
-.item-color.magento{
-  background: #a629ac;
+.card-color .border-black{
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: -7px;
+  left: -7px;
+  border: 1px solid transparent;
+  border-radius: 50%;
 }
-.item-color.petroleo{
-  background: #008faf;
+.card-color .item-color.active{
+  border-color: #FFFFFF;
 }
-.item-color.verde{
-  background: #009774;
+.card-color .item-color.active .border-black{
+  border-color: #000000;
 }
-.item-color.amarillo{
-  background: #d5b500;
-}
-.item-color.violeta{
-  background: #73187a;
-}
+
 form .col-form-label{
   border: 1px solid #000000;
   padding-top: 0;
@@ -515,37 +523,4 @@ Contact
   .contact form textarea{
     width: 70%;
   }
-}
-
-/* Carrito */
-.card-payment{
-  border: 1px solid #ccc;
-  margin-top: 2rem;
-  padding: 1.5rem
-}
-.form-check-label{
-  position: relative;
-}
-.logos-pagos{
-  position: absolute;
-  right: -75px;
-  top: -8px;
-}
-.logos-pagos.visa{
-  width: 50px;
-}
-.logos-pagos.paypal{
-  width: 60px;
-}
-.paypal-link{
-  float: right;
-}
-
-.card-payment .btn-generic{
-  width: 100%;
-  margin-top: 2rem;
-}
-
-.bold{
-  font-weight: 700;
 }

@@ -95,12 +95,18 @@ $(function() {
   });
 
   $('.goTo-1').on('click', function(){
+    $('.item-color').removeClass('active');
+    $(this).find('.item-color').addClass('active');
     $('.slider-vestido-a-medida-1').slick('slickGoTo', 0);
   })
   $('.goTo-2').on('click', function(){
+    $('.item-color').removeClass('active');
+    $(this).find('.item-color').addClass('active');
     $('.slider-vestido-a-medida-1').slick('slickGoTo', 1);
   })
   $('.goTo-3').on('click', function(){
+    $('.item-color').removeClass('active');
+    $(this).find('.item-color').addClass('active');
     $('.slider-vestido-a-medida-1').slick('slickGoTo', 2);
   })
 

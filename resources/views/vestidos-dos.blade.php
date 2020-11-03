@@ -12,42 +12,54 @@
           <!-- 1 -->
           <div class="col-2">
             <div class="card-color goTo-1"> 
-              <div class="item-color negro"></div>
+              <div class="item-color negro">
+                <div class="border-black"></div>
+              </div>
               <p> Negro </p>
             </div>
           </div>
           <!-- 2 -->
           <div class="col-2">
             <div class="card-color goTo-2"> 
-              <div class="item-color magento"></div>
+              <div class="item-color magento">
+                <div class="border-black"></div>
+              </div>
               <p> Magento </p>
             </div>
           </div>
           <!-- 3 -->
           <div class="col-2">
             <div class="card-color goTo-3"> 
-              <div class="item-color petroleo"></div>
+              <div class="item-color petroleo">
+                <div class="border-black"></div>
+              </div>
               <p> Petroleo </p>
             </div>
           </div>
           <!-- 4 -->
           <div class="col-2">
             <div class="card-color goTo-1"> 
-              <div class="item-color amarillo"></div>
+              <div class="item-color amarillo">
+                <div class="border-black"></div>
+              </div>
               <p> Amarillo </p>
             </div>
           </div>
           <!-- 5 -->
           <div class="col-2">
             <div class="card-color goTo-2"> 
-              <div class="item-color verde"></div>
+              <div class="item-color verde">
+                <div class="border-black"></div>
+              </div>
               <p> Verde </p>
             </div>
           </div>
           <!-- 6 -->
           <div class="col-2">
             <div class="card-color goTo-3"> 
-              <div class="item-color violeta"></div>
+              <div class="item-color violeta">
+                <div class="border-black"></div>
+              </div>
               <p> Violeta </p>
             </div>
           </div>
